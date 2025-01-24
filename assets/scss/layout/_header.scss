@@ -1,0 +1,70 @@
+.layout-header-wrap {
+  @include flexColumn {
+  }
+  padding-bottom: 48px;
+
+  .title-wrap {
+    @include flexColumn;
+    position: relative;
+    align-items: center;
+
+    width: auto;
+    margin: 0 40px;
+
+    .logo {
+      @include bgi("logo.png", (0 -51px), (244px 107px));
+      margin-top: 108px;
+      display: inline-block;
+      flex-shrink: 0;
+      content: "";
+      width: 155px;
+      height: 30px;
+
+      // display: inline-block;
+      // margin-top: 108px;
+      // vertical-align: top;
+      // background-position: 0 -51px;
+      // background-repeat: no-repeat;
+      // width: 155px;
+      // height: 30px;
+      // background-image: url(/assets/images/logo.png);
+      // background-size: 244px 107px;
+    }
+
+    .lang {
+      position: absolute;
+      top: 20px;
+      right: 0;
+
+      .sel {
+        position: relative;
+        @include font(small);
+        font-weight: 400;
+        width: 100%;
+        min-width: 95px;
+        height: 30px;
+        padding: 4px 10px 6px 8px;
+        color: #333;
+        border: 1px solid #ccc;
+        border-radius: 0;
+        -webkit-appearance: none;
+        cursor: pointer;
+        z-index: 1;
+      }
+      &::after {
+        @include bgi(
+          ("icon/m_sp_01_login_7b3d4fc3.png"),
+          (-27px -250px),
+          (336px 330px)
+        );
+        content: "";
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 16px;
+        height: 14px;
+        z-index: 0;
+      }
+    }
+  }
+}

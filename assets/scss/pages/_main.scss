@@ -1,0 +1,223 @@
+.page-login-wrap {
+  position: relative;
+  height: 100%;
+  letter-spacing: -0.5px;
+
+  .main-contents-wrap {
+    .login-wrap {
+      @include flexColumn {
+      }
+      width: 460px;
+      margin: 0 auto;
+
+      .tab-wrap {
+        @include flex {
+          align-items: flex-start;
+          flex: 1;
+        }
+        background-color: #f5f6f4;
+        border-radius: 12px;
+
+        .tab-container {
+          @include flexYCenter {
+            align-items: flex-start;
+            flex: 1;
+          }
+        }
+
+        .tab-id,
+        .tab-ones,
+        .tab-qr {
+          @include flex {
+            flex: 1;
+            justify-content: center;
+          }
+          color: #777;
+          height: 63px;
+          padding-top: 17px;
+          border-right: 1px solid #e1e3e5;
+          border-bottom: 0;
+          background-color: #f5f6f4;
+          text-align: center;
+          z-index: 2;
+        }
+
+        .tab-id {
+          border-radius: 12px 0 0 0;
+
+          & > ::before {
+            @include bgi(
+              ("icon/m_sp_01_login_7b3d4fc3.png"),
+              (-54px -314px),
+              (336px 330px)
+            );
+            content: "";
+            width: 16px;
+            height: 16px;
+          }
+        }
+
+        .tab-ones {
+          & > ::before {
+            @include bgi(
+              ("icon/m_sp_01_login_7b3d4fc3.png"),
+              (-316px -294px),
+              (336px 330px)
+            );
+            content: "";
+            width: 16px;
+            height: 16px;
+          }
+        }
+
+        .tab-qr {
+          border-radius: 0 12px 0 0;
+          border-right: 0;
+
+          & > ::before {
+            @include bgi(
+              ("icon/m_sp_01_login_7b3d4fc3.png"),
+              (-18px -314px),
+              (336px 330px)
+            );
+            content: "";
+            width: 16px;
+            height: 16px;
+          }
+        }
+
+        .tab-text {
+          @include flex {
+            align-items: flex-start;
+          }
+          @include font(subtitle, 14px);
+          font-weight: 500;
+          gap: 8px;
+        }
+
+        .on {
+          color: #333;
+          border-radius: 12px 12px 0 0;
+          border-color: #e1e3e5;
+          border: 1px solid #e1e3e5;
+          border-bottom: 0;
+          background-color: #fff;
+          z-index: 5;
+        }
+      }
+
+      .panel-wrap {
+        @include flexColumn {
+        }
+        position: relative;
+        z-index: 3;
+        margin-top: -10px;
+        padding: 24px;
+        border: 1px solid #e1e3e5;
+        border-radius: 12px;
+        background-color: #fff;
+
+        .login-box {
+          @include flexColumn {
+            flex: 1;
+          }
+          .input-id {
+            @include flex {
+            }
+            position: relative;
+            height: 60px;
+            border-radius: 8px 8px 0 0;
+            border: 1px solid #c5ccd2;
+            padding: 27px 15px 8px;
+
+            input {
+              width: 100%;
+            }
+
+            label {
+              position: absolute;
+              bottom: 17px;
+              pointer-events: none;
+              @include font(subtitle, 22px);
+              font-weight: 400;
+              letter-spacing: -0.2px;
+              transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+              color: rgba(0, 0, 0, 0.38);
+              z-index: 5;
+            }
+          }
+
+          .input-pw {
+            @include flexColumn {
+            }
+            height: 59px;
+            border-radius: 0 0 8px 8px;
+            border: 1px solid #c5ccd2;
+            border-top: 0;
+            padding: 27px 15px 8px;
+
+            input {
+              width: 100%;
+            }
+
+            label {
+              position: absolute;
+              bottom: 100px;
+              pointer-events: none;
+              @include font(subtitle, 22px);
+              font-weight: 400;
+              letter-spacing: -0.2px;
+              transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+              color: rgba(0, 0, 0, 0.38);
+              z-index: 5;
+            }
+          }
+        }
+
+        .login-check-wrap {
+          @include flexBetween {
+          }
+          margin-top: 12px;
+
+          .login-keep {
+            @include flex;
+
+            span {
+              @include flex;
+              @include font(bodyS, 20px);
+              font-weight: 400;
+              color: #767678;
+
+              gap: 6px;
+
+              &::before {
+                @include bgi(
+                  ("icon/m_sp_01_login_7b3d4fc3.png"),
+                  (-292px -236px),
+                  (336px 330px)
+                );
+                content: "";
+                width: 20px;
+                height: 20px;
+              }
+            }
+          }
+          .ip-check {
+          }
+        }
+
+        .btn-login-wrap {
+          @include flexColumn {
+          }
+
+          .btn-login {
+            @include flexColumn {
+              flex: 1;
+            }
+            padding: 13px 20px;
+          }
+        }
+      }
+    }
+  }
+}

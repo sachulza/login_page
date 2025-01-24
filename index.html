@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- //meta -->
+
+    <!-- css -->
+    <!-- plug-in css -->
+
+    <!-- //plug-in css -->
+
+    <!-- ui css -->
+    <link rel="stylesheet" href="./assets/scss/style.css" />
+    <!-- //ui css -->
+    <!-- //css -->
+    <title>login</title>
+  </head>
+  <body>
+    <!-- 
+    class naming : 
+        - 공통적으로 쓰는 큰 틀 레이아웃 (layout)
+        - 공통으로 여러곳에 사용 시 (ui)
+        - 특정 페이지만 사용 시 (page)
+        - 특이 케이스 (main, sub)
+    -->
+
+    <div class="page-login-wrap">
+      <header class="layout-header-wrap">
+        <div class="title-wrap">
+          <a href="http://www.naver.com" class="logo">
+            <h1 class="ui-blind">NAVER</h1>
+          </a>
+          <div class="lang">
+            <select name="locale_switch" id="" title="언어선택" class="sel">
+              <option value="ko-KR">한국어</option>
+              <option value="en_US">English</option>
+              <option value="zh-Hans_CN">中文(简体)</option>
+              <option value="zh-Hant_TW">中文(台灣)</option>
+            </select>
+          </div>
+        </div>
+      </header>
+
+      <!-- <section class="main-contents-wrap">
+        <div class="login-wrap">
+          <ul class="tab-wrap">
+            <li class="tab-container">
+              <a href="" class="tab-id on">
+                <span class="tab-text">ID/전화번호</span>
+              </a>
+            </li>
+            <li class="tab-container">
+              <a href="" class="tab-ones">
+                <span class="tab-text">일회용 번호</span>
+              </a>
+            </li>
+            <li class="tab-container">
+              <a href="" class="tab-qr">
+                <span class="tab-text">QR코드</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section> -->
+
+      <section class="main-contents-wrap">
+        <div class="login-wrap">
+          <ul class="tab-wrap">
+            <li class="tab-container">
+              <a href="" class="tab-id on">
+                <span class="tab-text">ID/전화번호</span>
+              </a>
+            </li>
+            <li class="tab-container">
+              <a href="" class="tab-ones">
+                <span class="tab-text">일회용 번호</span>
+              </a>
+            </li>
+            <li class="tab-container">
+              <a href="" class="tab-qr">
+                <span class="tab-text">QR코드</span>
+              </a>
+            </li>
+          </ul>
+          <form action="">
+            <div class="panel-wrap">
+              <div class="login-box">
+                <div class="input-id">
+                  <input type="text" />
+                  <label for="">아이디 또는 전화번호</label>
+                </div>
+                <div class="input-pw">
+                  <input type="text" /> <label for="">비밀번호</label>
+                </div>
+              </div>
+              <div class="login-check-wrap">
+                <div class="login-keep">
+                  <span>로그인 상태 유지</span>
+                </div>
+                <div class="ip-check">
+                  <a href=""><span>IP보안</span></a>
+                </div>
+              </div>
+              <div class="btn-login-wrap">
+                <button class="btn-login">
+                  <span class="btn-text"></span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <!-- js -->
+    <!-- plug-in js -->
+
+    <!-- //plug-in js -->
+    <!-- //js -->
+  </body>
+</html>
