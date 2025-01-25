@@ -244,6 +244,28 @@
               height: 22px;
             }
           }
+          .view-container {
+            @include flexCenter {
+            }
+            position: absolute;
+            top: 10px;
+            right: 33px;
+            width: 40px;
+            height: 40px;
+            z-index: 7;
+
+            .icon-view {
+              @include bgi(
+                ("icon/m_sp_01_login_7b3d4fc3.png"),
+                (-292px -72px),
+                (336px 330px)
+              );
+              content: "";
+              display: inline-block;
+              width: 22px;
+              height: 22px;
+            }
+          }
         }
 
         .login-check-wrap {
