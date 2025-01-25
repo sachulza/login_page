@@ -78,7 +78,8 @@ summary,
 time,
 mark,
 audio,
-video {
+video,
+button {
   margin: 0;
   padding: 0;
   border: 0;
@@ -230,6 +231,12 @@ table {
   font-weight: 900;
   src: url(/assets/fonts/AppleSDGothicNeo/AppleSDGothicNeoH.font-woff2)
     format("font-woff2");
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  src: url(/assets/fonts/helveticaneue/helveticaneue.woff2) format("font-woff2");
 }
 
 body {

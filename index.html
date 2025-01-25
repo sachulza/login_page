@@ -43,8 +43,8 @@
         </div>
       </header>
 
-      <!-- <section class="main-contents-wrap">
-        <div class="login-wrap">
+      <div class="main-contents-wrap">
+        <section class="login-wrap">
           <ul class="tab-wrap">
             <li class="tab-container">
               <a href="" class="tab-id on">
@@ -60,28 +60,15 @@
               <a href="" class="tab-qr">
                 <span class="tab-text">QR코드</span>
               </a>
-            </li>
-          </ul>
-        </div>
-      </section> -->
 
-      <section class="main-contents-wrap">
-        <div class="login-wrap">
-          <ul class="tab-wrap">
-            <li class="tab-container">
-              <a href="" class="tab-id on">
-                <span class="tab-text">ID/전화번호</span>
-              </a>
-            </li>
-            <li class="tab-container">
-              <a href="" class="tab-ones">
-                <span class="tab-text">일회용 번호</span>
-              </a>
-            </li>
-            <li class="tab-container">
-              <a href="" class="tab-qr">
-                <span class="tab-text">QR코드</span>
-              </a>
+              <!-- nudge banner -->
+              <div class="nudge-wrap">
+                <div class="nudge-container">
+                  <span>PC방 등 공용PC라면 QR코드 로그인이 더 안전해요.</span>
+                  <button></button>
+                </div>
+              </div>
+              <!-- //nudge banner -->
             </li>
           </ul>
           <form action="">
@@ -90,9 +77,15 @@
                 <div class="input-id">
                   <input type="text" />
                   <label for="">아이디 또는 전화번호</label>
+                  <button class="cancel-container">
+                    <span class="icon-cancel"></span>
+                  </button>
                 </div>
                 <div class="input-pw">
-                  <input type="text" /> <label for="">비밀번호</label>
+                  <input type="password" /> <label for="">비밀번호</label>
+                  <button class="cancel-container">
+                    <span class="icon-cancel"></span>
+                  </button>
                 </div>
               </div>
               <div class="login-check-wrap">
@@ -100,18 +93,71 @@
                   <span>로그인 상태 유지</span>
                 </div>
                 <div class="ip-check">
-                  <a href=""><span>IP보안</span></a>
+                  <a href=""><span class="ip-text">IP보안</span></a>
+                  <div class="switch-wrap">
+                    <span class="switch-on">ON</span>
+                    <span class="switch-off">OFF</span>
+                  </div>
                 </div>
               </div>
               <div class="btn-login-wrap">
                 <button class="btn-login">
-                  <span class="btn-text"></span>
+                  <span class="btn-text">로그인</span>
+                </button>
+                <div class="center-text">
+                  <span class="desc">지문 · 얼굴 인증을 설정했다면</span>
+                  <span class="center-line"></span>
+                </div>
+                <button class="passkey-login">
+                  <span class="passkey-text">패스키 로그인</span>
                 </button>
               </div>
             </div>
           </form>
+          <ul class="find-wrap">
+            <li class="find-container">
+              <a href="" class="find-pw">비밀번호 찾기</a>
+            </li>
+            <li class="find-container">
+              <a href="" class="find-id">아이디 찾기</a>
+            </li>
+            <li class="find-container">
+              <a href="" class="join">회원가입</a>
+            </li>
+          </ul>
+          <div class="banner-wrap">
+            <img
+              src="https://ssl.pstatic.net/melona/libs/1378/1378592/6061730bbefca3ca27d8_20250120153112532.png"
+              alt=""
+            />
+          </div>
+        </section>
+      </div>
+
+      <footer class="layout-footer-wrap">
+        <div class="copyrights-wrap">
+          <ul class="link-wrap">
+            <li class="link-container">
+              <a href="">이용약관</a>
+            </li>
+            <li class="link-container" style="font-weight: bold">
+              <a href="">개인정보처리방침</a>
+            </li>
+            <li class="link-container">
+              <a href="">책임의 한계와 법적고지</a>
+            </li>
+            <li class="link-container">
+              <a href="">회원정보 고객센터</a>
+            </li>
+          </ul>
+          <div class="copyrigts">
+            <a href="" class="footer-logo"></a>
+            <span>Copyright</span>
+            <span class="corp">© NAVER Corp.</span>
+            <span>All Rights Reserved.</span>
+          </div>
         </div>
-      </section>
+      </footer>
     </div>
 
     <!-- js -->
